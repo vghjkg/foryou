@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8caca;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kolom {
+   width: 190px;
+    padding: 50px;
+    background: #c87979;
+    border-radius: 18px;
+    border: 3px solid #773636;
+    text-align: center;
+}
+
+.tombol {
+    background: #ab6161;
+    color: #ede8e8;
+    border-radius: 8px;
+    border: 1px solid #773636;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.judul {
+    font-family: 'Poppins', sans-serif;
+    color: #723e3e;
+    -webkit-text-stroke: #fdf6f6 0.2px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.paw {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    background-color: rgb(253, 209, 209);
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #773636;
+    font-size: 16px;
+    outline: none;
+}

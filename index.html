@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy valentine 4u</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" class="kolom">
+          <h1 class="judul">Enter Password</h1>
+            <input class="paw" type="password" id="password" placeholder="password">
+            <br><br>
+           <button class="tombol" onclick="checkPassword()">Submit</button>
+            <script>
+                const passwordbenar = "3Gerberas";
+                const passwordInput = document.getElementById("password");
+
+                function checkPassword() {
+                    const inputUser = passwordInput.value;
+
+                    if (inputUser === passwordbenar) {
+                        window.location.href = "secret.html";
+                    } else {
+                        alert("Incorrect password. Try again!");
+                    }
+                }
+
+                // Auto-redirect as you type
+                passwordInput.addEventListener("input", function() {
+                    if (passwordInput.value === passwordbenar) {
+                        window.location.href = "secret.html";
+                    }
+                });
+
+                // Also support Enter key
+                passwordInput.addEventListener("keypress", function(event) {
+                    if (event.key === "Enter") {
+                        checkPassword();
+                    }
+                });
+            </script>
+    </div>  
+</body>
+</html>         
